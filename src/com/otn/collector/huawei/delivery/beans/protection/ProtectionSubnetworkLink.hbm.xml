@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.protection.ProtectionSubnetworkLink" table="OTN_DELIVERY_PROTECTIONSUBNETWORKLINK">
+       	<id name="id" type="int">
+       		<column name="ID"/>
+       		<generator class="increment"/>
+       	</id>
+        <property name="srcTPStr" type="java.lang.String">
+            <column name="SRCTPSTR" />
+        </property>
+        <property name="vc4ListStr" type="java.lang.String">
+            <column name="VC4LISTSTR" />
+        </property>
+        <property name="snkTPStr" type="java.lang.String">
+            <column name="SNKTPSTR" />
+        </property>
+        <property name="protectionSubnetworkNameStr" type="java.lang.String">
+        	<column name="protectionSubnetworkNameStr"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.topologicalLink.TopologicalLinkAdditionalInfo" table="OTN_DELIVERY_TOPOLOGICALLINKADDITIONALINFO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="memo" type="java.lang.String">
+            <column name="MEMO" />
+        </property>
+        <property name="linkType" type="java.lang.String">
+            <column name="LINKTYPE" />
+        </property>
+        <property name="topologicalLinkNameStr" type="java.lang.String">
+            <column name="topologicalLinkNameStr" />
+        </property>
+    </class>
+</hibernate-mapping>

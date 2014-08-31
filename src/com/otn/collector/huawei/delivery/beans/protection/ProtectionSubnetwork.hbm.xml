@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.protection.ProtectionSubnetwork" table="OTN_DELIVERY_PROTECTIONSUBNETWORK">
+        <id name="nameStr" type="java.lang.String">
+            <column name="nameStr" />
+            <generator class="assigned" />
+        </id>
+        <property name="userLabel" type="java.lang.String">
+            <column name="USERLABEL" />
+        </property>
+        <property name="nativeEMSName" type="java.lang.String">
+            <column name="NATIVEEMSNAME" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="OWNER" />
+        </property>
+        <property name="layerRate" type="short">
+            <column name="LAYERRATE" />
+        </property>
+        <property name="psnType" type="java.lang.String">
+            <column name="PSNTYPE" />
+        </property>
+        <property name="neIDListStr" type="java.lang.String">
+        	<column name="NEIDLISTSTR"/>
+        </property>
+        <property name="additionalInfoStr" type="java.lang.String">
+            <column name="ADDITIONALINFOSTR" length="1024"/>
+        </property>
+    </class>
+</hibernate-mapping>

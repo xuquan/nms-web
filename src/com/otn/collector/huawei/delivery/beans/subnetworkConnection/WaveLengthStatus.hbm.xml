@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.subnetworkConnection.WaveLengthStatus" table="OTN_DELIVERY_WAVELENGTHSTATUS">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="frequency" type="java.lang.String">
+            <column name="FREQUENCY" />
+        </property>
+        <property name="used" type="short">
+            <column name="USED" />
+        </property>
+        <property name="unused" type="short">
+            <column name="UNUSED" />
+        </property>
+        <property name="additionalInfoStr" type="java.lang.String">
+            <column name="ADDITIONALINFOSTR" length="1024"/>
+        </property>
+    </class>
+</hibernate-mapping>

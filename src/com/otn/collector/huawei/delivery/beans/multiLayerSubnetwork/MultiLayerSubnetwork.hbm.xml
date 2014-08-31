@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.multiLayerSubnetwork.MultiLayerSubnetwork" table="OTN_DELIVERY_MULTILAYERSUBNETWORK">
+       <id name="nameStr" column="nameStr" type="java.lang.String" length="1024">
+			<generator class="assigned"/>
+		</id>
+        <property name="userLabel" type="java.lang.String">
+            <column name="USERLABEL" />
+        </property>
+        <property name="nativeEMSName" type="java.lang.String">
+            <column name="NATIVEEMSNAME" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="OWNER" />
+        </property>
+        <property name="subnetworkType" type="java.lang.String">
+            <column name="SUBNETWORKTYPE" />
+        </property>
+        <property name="supportedRatesStr" type="java.lang.String">
+            <column name="SUPPORTEDRATESSTR" />
+        </property>
+        <property name="multiLayerSubnetworkLocation" type="java.lang.String">
+            <column name="multiLayerSubnetworkLocation"/>
+        </property>
+    </class>
+</hibernate-mapping>

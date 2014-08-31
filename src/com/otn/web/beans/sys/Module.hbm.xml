@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.web.beans.sys.Module" table="SYS_MODULE">
+        <id name="moduleId" type="long">
+            <column name="MODULE_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="moduleName" type="java.lang.String">
+            <column name="MODULE_NAME" length="64" not-null="true"/>
+        </property>
+        <property name="moduleUrl" type="java.lang.String">
+            <column name="MODULE_URL" length="255"/>
+        </property>
+        <property name="parentModuleId" type="long">
+            <column name="PARENT_MODULE_ID" />
+        </property>
+        <property name="order" type="int">
+            <column name="ORDER" not-null="true"/>
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" length="255"/>
+        </property>
+    </class>
+</hibernate-mapping>

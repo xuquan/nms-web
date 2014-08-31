@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.equipment.EquipmentRoom" table="OTN_DELIVERY_EQUIPMENTROOM">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="containedCabinet" type="java.lang.String">
+            <column name="CONTAINEDCABINET" />
+        </property>
+        <property name="containedNMManager" type="java.lang.String">
+            <column name="CONTAINEDNMMANAGER" />
+        </property>
+        <property name="country" type="java.lang.String">
+            <column name="COUNTRY" />
+        </property>
+        <property name="province" type="java.lang.String">
+            <column name="PROVINCE" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="site" type="java.lang.String">
+            <column name="SITE" />
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+        <property name="cableArrange" type="java.lang.String">
+            <column name="CABLEARRANGE" />
+        </property>
+        <property name="defendStaticFloor" type="java.lang.String">
+            <column name="DEFENDSTATICFLOOR" />
+        </property>
+        <property name="floorHeight" type="short">
+            <column name="FLOORHEIGHT" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="MEMO" />
+        </property>
+        <property name="physicalLocationInfoId" type="int">
+        	<column name="physicalLocationInfoId"/>
+        </property>
+    </class>
+</hibernate-mapping>

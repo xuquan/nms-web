@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.terminationPoint.TerminationPoint" table="OTN_DELIVERY_TERMINATIONPOINT">
+        <id name="nameStr" column="nameStr" type="java.lang.String" length="1024">
+			<generator class="assigned"/>
+		</id>
+        <property name="userLabel" type="java.lang.String">
+            <column name="USERLABEL" />
+        </property>
+        <property name="nativeEMSName" type="java.lang.String">
+            <column name="NATIVEEMSNAME" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="OWNER" />
+        </property>
+        <property name="ingressTrafficDescriptorNameStr" type="java.lang.String">
+            <column name="INGRESSTRAFFICDESCRIPTORNAMESTR" />
+        </property>
+        <property name="egressTrafficDescriptorNameStr" type="java.lang.String">
+            <column name="EGRESSTRAFFICDESCRIPTORNAMESTR" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        <property name="connectionState" type="java.lang.String">
+            <column name="CONNECTIONSTATE" />
+        </property>
+        <property name="tpMappingMode" type="java.lang.String">
+            <column name="TPMAPPINGMODE" />
+        </property>
+        <property name="direction" type="java.lang.String">
+            <column name="DIRECTION" />
+        </property>
+        <property name="tpProtectionAssociation" type="java.lang.String">
+            <column name="TPPROTECTIONASSOCIATION" />
+        </property>
+        <property name="edgePoint" type="boolean">
+            <column name="EDGEPOINT" />
+        </property>
+         <property name="managedElementNameStr" type="java.lang.String">
+            <column name="managedElementNameStr" />
+        </property>
+    </class>
+</hibernate-mapping>

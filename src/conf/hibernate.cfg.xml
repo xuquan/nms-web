@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.username">sa</property>
+		<property name="connection.password"></property>
+		<property name="connection.url">
+			jdbc:hsqldb:file:db/otn;shutdown=true
+		</property>
+		<property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+		<property name="connection.driver_class">
+			org.hsqldb.jdbcDriver
+		</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="current_session_context_class">thread</property>
+
+		<mapping resource="com/otn/common/beans/TestBean.hbm.xml" />
+		<mapping resource="com/otn/common/beans/Och.hbm.xml" />
+		<mapping resource="com/otn/common/beans/Bearer.hbm.xml" />
+		<mapping resource="com/otn/common/beans/OchNode.hbm.xml" />
+		<mapping resource="com/otn/common/beans/OmsNode.hbm.xml" />
+		<mapping resource="com/otn/common/beans/Path.hbm.xml" />
+		<mapping resource="com/otn/common/beans/Xcplane.hbm.xml" />
+		<mapping resource="com/otn/common/beans/Site.hbm.xml" />
+		<mapping resource="com/otn/common/beans/Subnet.hbm.xml" />
+		<mapping resource="com/otn/common/beans/OchPort.hbm.xml" />
+		<mapping resource="com/otn/common/beans/OmsPort.hbm.xml" />
+		<mapping resource="com/otn/common/beans/Xc.hbm.xml" />
+		<mapping resource="com/otn/common/beans/XcPhy.hbm.xml" />
+		
+		
+		<!-- 传输网存量 -->
+		<mapping resource="com/otn/collector/huawei/delivery/beans/ems/Ems.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/ems/EmsAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/Cabinet.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/Equipment.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/EquipmentAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/EquipmentHolder.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/EquipmentHolderAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/EquipmentOrHolder.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/EquipmentRoom.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/ObjectAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/PhysicalLocationInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/equipment/Shelf.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/managedElement/ManagedElement.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/managedElement/ManagedElementAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/multiLayerSubnetwork/MultiLayerSubnetwork.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/multiLayerSubnetwork/RouteAndTopologicalLink.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/protection/ProtectionGroup.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/protection/ProtectionSubnetwork.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/protection/ProtectionSubnetworkLink.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/protection/SwitchData.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/protection/WDMProtectionGroup.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/protection/WDMSwitchData.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/subnetworkConnection/CrossConnect.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/subnetworkConnection/CrossConnectAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/subnetworkConnection/SubnetworkConnection.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/subnetworkConnection/SubnetworkConnectionAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/subnetworkConnection/TPData.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/subnetworkConnection/WaveLengthStatus.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/terminationPoint/TerminationPoint.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/terminationPoint/TerminationPointAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/topologicalLink/TopologicalLink.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/topologicalLink/TopologicalLinkAdditionalInfo.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/TopoManagementManager/Node.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/TopoManagementManager/Position.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/trailNtwProtection/TrailNtwProtection.hbm.xml" />
+		<mapping resource="com/otn/collector/huawei/delivery/beans/transmissionParameters/LayeredParameters.hbm.xml" />
+		
+		<!-- Web页面 -->
+		<mapping resource="com/otn/web/beans/sys/Group.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/GroupRight.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/GroupRole.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/OpLog.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/Org.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/Right.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/Role.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/RoleRight.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/User.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/UserGroup.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/UserRight.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/UserRole.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/Dictionary.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/DictionaryItem.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/Module.hbm.xml" />
+		<mapping resource="com/otn/web/beans/sys/Property.hbm.xml" />
+		
+	</session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.managedElement.ManagedElement" table="OTN_DELIVERY_MANAGEDELEMENT">
+    	<id name="nameStr" column="nameStr" type="java.lang.String" length="1024">
+			<generator class="assigned"/>
+		</id>
+        <property name="userLabel" type="java.lang.String">
+            <column name="USERLABEL" />
+        </property>
+        <property name="nativeEMSName" type="java.lang.String">
+            <column name="NATIVEEMSNAME" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="OWNER" />
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+        <property name="version" type="java.lang.String">
+            <column name="VERSION" />
+        </property>
+        <property name="productName" type="java.lang.String">
+            <column name="PRODUCTNAME" />
+        </property>
+        <property name="communicationState" type="java.lang.String">
+            <column name="COMMUNICATIONSTATE" />
+        </property>
+        <property name="emsInSyncState" type="boolean">
+            <column name="EMSINSYNCSTATE" />
+        </property>
+        <property name="supportedRatesStr" type="java.lang.String">
+            <column name="SUPPORTEDRATESSTR" />
+        </property>
+    </class>
+</hibernate-mapping>

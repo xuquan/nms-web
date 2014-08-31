@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.terminationPoint.TerminationPointAdditionalInfo" table="OTN_DELIVERY_TERMINATIONPOINTADDITIONALINFO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="serviceLoadFlag" type="java.lang.String">
+            <column name="SERVICELOADFLAG" />
+        </property>
+        <property name="supportFEC" type="java.lang.String">
+            <column name="SUPPORTFEC" />
+        </property>
+        <property name="terminationPointNameStr" type="java.lang.String">
+            <column name="terminationPointNameStr" />
+        </property>
+    </class>
+</hibernate-mapping>

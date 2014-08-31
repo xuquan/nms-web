@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.managedElement.ManagedElementAdditionalInfo" table="OTN_DELIVERY_MANAGEDELEMENTADDITIONALINFO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="phyInfo" type="java.lang.String">
+            <column name="PHYINFO" />
+        </property>
+        <property name="gateWay" type="java.lang.String">
+            <column name="GATEWAY" />
+        </property>
+        <property name="alarmSeverity" type="java.lang.String">
+            <column name="ALARMSEVERITY" />
+        </property>
+        <property name="shelfType" type="java.lang.String">
+            <column name="SHELFTYPE" />
+        </property>
+        <property name="preConfig" type="java.lang.String">
+            <column name="PRECONFIG" />
+        </property>
+        <property name="maxTransferRate" type="java.lang.String">
+            <column name="MAXTRANSFERRATE" />
+        </property>
+        <property name="subnetwork" type="java.lang.String">
+            <column name="SUBNETWORK" />
+        </property>
+        <property name="psnName" type="java.lang.String">
+            <column name="PSNNAME" />
+        </property>
+        <property name="lsrID" type="java.lang.String">
+            <column name="LSRID" />
+        </property>
+        <property name="ipAddress" type="java.lang.String">
+            <column name="IPADDRESS" />
+        </property>
+        <property name="waveNumber" type="java.lang.String">
+            <column name="WAVENUMBER" />
+        </property>
+        <property name="managedElementNameStr" type="java.lang.String">
+            <column name="managedElementNameStr" />
+        </property>
+    </class>
+</hibernate-mapping>

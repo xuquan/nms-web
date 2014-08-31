@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.otn.collector.huawei.delivery.beans.equipment.EquipmentHolder" table="otn_delivery_equipmentHolder">
+		<id name="nameStr" column="nameStr" type="java.lang.String" length="1024">
+			<generator class="assigned"/>
+		</id>
+		<property name="userLabel" column="userLabel" type="java.lang.String" />
+		<property name="nativeEMSName" column="nativeEMSName" type="java.lang.String" />
+		<property name="owner" column="owner" type="java.lang.String" />
+		<property name="alarmReportingIndicator" column="alarmReportingIndicator" type="boolean" />
+		<property name="holderType" column="holderType" type="java.lang.String" />
+		<property name="expectedOrInstalledEquipmentStr" column="expectedOrInstalledEquipmentStr" type="java.lang.String" length="1024"/>
+		<property name="acceptableEquipmentTypeListStr" column="acceptableEquipmentTypeListStr" type="java.lang.String" length="4096"/>
+		<property name="holderState" column="holderState" type="java.lang.String" />
+		<property name="managedElementNameStr" type="java.lang.String">
+        	<column name="managedElementNameStr"/>
+        </property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.equipment.Shelf" table="OTN_DELIVERY_SHELF">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="equipmentRoomName" type="java.lang.String">
+            <column name="EQUIPMENTROOMNAME" />
+        </property>
+        <property name="cabinetName" type="java.lang.String">
+            <column name="CABINETNAME" />
+        </property>
+        <property name="numbering" type="java.lang.String">
+            <column name="NUMBERING" />
+        </property>
+        <property name="locationOfCabinet" type="java.lang.String">
+            <column name="LOCATIONOFCABINET" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="MEMO" />
+        </property>
+       	<property name="physicalLocationInfoId" type="int">
+        	<column name="physicalLocationInfoId"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.protection.WDMProtectionGroup" table="OTN_DELIVERY_WDMPROTECTIONGROUP">
+       <id name="nameStr" column="nameStr" type="java.lang.String" length="1024">
+			<generator class="assigned"/>
+		</id>
+        <property name="userLabel" type="java.lang.String">
+            <column name="USERLABEL" />
+        </property>
+        <property name="nativeEMSName" type="java.lang.String">
+            <column name="NATIVEEMSNAME" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="OWNER" />
+        </property>
+        <property name="protectionGroupType" type="java.lang.String">
+            <column name="PROTECTIONGROUPTYPE" />
+        </property>
+        <property name="protectionSchemeState" type="java.lang.String">
+            <column name="PROTECTIONSCHEMESTATE" />
+        </property>
+        <property name="reversionMode" type="java.lang.String">
+            <column name="REVERSIONMODE" />
+        </property>
+        <property name="pgpTPListStr" type="java.lang.String" access="field">
+            <column name="PGPTPLISTSTR" />
+        </property>
+        <property name="pgpParametersStr" type="java.lang.String" access="field">
+            <column name="PGPPARAMETERSSTR" />
+        </property>
+        <property name="additionalInfoStr" type="java.lang.String" access="field">
+            <column name="ADDITIONALINFOSTR" length="1024"/>
+        </property>
+        <property name="managedElementNameStr" type="java.lang.String">
+        	<column name="managedElementNameStr"/>
+        </property>
+    </class>
+</hibernate-mapping>

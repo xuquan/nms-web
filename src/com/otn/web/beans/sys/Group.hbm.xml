@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.web.beans.sys.Group" table="SYS_GROUP">
+        <id name="groupId" type="long">
+            <column name="GROUP_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="parentGroupId" type="long">
+            <column name="PARENT_GROUP_ID" not-null="true"/>
+        </property>
+        <property name="groupName" type="java.lang.String">
+            <column name="GROUP_NAME" not-null="true"/>
+        </property>
+        <property name="createTime" type="java.util.Date">
+            <column name="CREATE_TIME" not-null="true"/>
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>

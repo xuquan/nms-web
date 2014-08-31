@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.web.beans.sys.Property" table="SYS_PROPERTY">
+        <id name="propId" type="long">
+            <column name="PROP_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="propCode" type="java.lang.String">
+            <column name="PROP_CODE" length="32" not-null="true"/>
+        </property>
+        <property name="propName" type="java.lang.String">
+            <column name="PROP_NAME" length="64" not-null="true"/>
+        </property>
+        <property name="propValue" type="java.lang.String">
+            <column name="PROP_VALUE" length="64" not-null="true"/>
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" length="255"/>
+        </property>
+    </class>
+</hibernate-mapping>

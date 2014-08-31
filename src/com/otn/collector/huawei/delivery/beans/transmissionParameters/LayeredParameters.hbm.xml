@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.transmissionParameters.LayeredParameters" table="OTN_DELIVERY_LAYEREDPARAMETERS">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="layer" type="short">
+            <column name="LAYER" />
+        </property>
+        <property name="transmissionParamsStr" type="java.lang.String">
+            <column name="TRANSMISSIONPARAMSSTR" length="1024"/>
+        </property>
+        <property name="tpDataId" type="int">
+        	<column name="tpDataId"/>
+        </property>
+        <property name="terminationPointNameStr" type="java.lang.String">
+        	<column name="terminationPointNameStr"/>
+        </property>
+    </class>
+</hibernate-mapping>

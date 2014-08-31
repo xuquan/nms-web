@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.protection.SwitchData" table="OTN_DELIVERY_SWITCHDATA">
+       	<id name="id" type="int">
+       		<column name="ID"/>
+       		<generator class="increment"/>
+       	</id>
+        <property name="protectionType" type="java.lang.String">
+            <column name="PROTECTIONTYPE" />
+        </property>
+        <property name="switchReason" type="java.lang.String">
+            <column name="SWITCHREASON" />
+        </property>
+        <property name="layerRate" type="short">
+            <column name="LAYERRATE" />
+        </property>
+        <property name="groupNameStr" type="java.lang.String">
+            <column name="GROUPNAMESTR" />
+        </property>
+        <property name="protectedTPStr" type="java.lang.String">
+            <column name="PROTECTEDTPSTR" />
+        </property>
+        <property name="switchToTPStr" type="java.lang.String">
+            <column name="SWITCHTOTPSTR" />
+        </property>
+        <property name="additionalInfoStr" type="java.lang.String">
+            <column name="ADDITIONALINFOSTR" length="1024"/>
+        </property>
+    </class>
+</hibernate-mapping>

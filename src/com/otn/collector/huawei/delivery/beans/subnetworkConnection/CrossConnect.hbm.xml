@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.subnetworkConnection.CrossConnect" table="OTN_DELIVERY_CROSSCONNECT">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="active" type="boolean">
+            <column name="ACTIVE" />
+        </property>
+        <property name="direction" type="java.lang.String">
+            <column name="DIRECTION" />
+        </property>
+        <property name="ccType" type="java.lang.String">
+            <column name="CCTYPE" />
+        </property>
+        <property name="aEndNameListStr" type="java.lang.String">
+            <column name="AENDNAMELISTSTR" length="1024"/>
+        </property>
+        <property name="zEndNameListStr" type="java.lang.String">
+            <column name="ZENDNAMELISTSTR" length="1024"/>
+        </property>
+        <property name="managedElementNameStr" type="java.lang.String">
+        	<column name="managedElementNameStr"/>
+        </property>
+    </class>
+</hibernate-mapping>

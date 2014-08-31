@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.ems.EmsAdditionalInfo" table="OTN_DELIVERY_EMSADDITIONALINFO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="alarmSeverity" type="java.lang.String">
+            <column name="ALARMSEVERITY" />
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+        <property name="commuAddress" type="java.lang.String">
+            <column name="COMMUADDRESS" />
+        </property>
+        <property name="emsTime" type="java.lang.String">
+            <column name="EMSTIME" />
+        </property>
+        <property name="interfaceVersion" type="java.lang.String">
+            <column name="INTERFACEVERSION" />
+        </property>
+        <property name="emsState" type="java.lang.String">
+            <column name="EMSSTATE" />
+        </property>
+        <property name="administrativeState" type="java.lang.String">
+            <column name="ADMINISTRATIVESTATE" />
+        </property>
+        <property name="emsNameStr" type="java.lang.String">
+            <column name="emsNameStr" />
+        </property>
+    </class>
+</hibernate-mapping>

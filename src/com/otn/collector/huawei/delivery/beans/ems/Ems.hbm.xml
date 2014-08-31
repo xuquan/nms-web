@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.ems.Ems" table="otn_delivery_ems" >
+        <id name="nameStr" column="nameStr" type="java.lang.String" length="1024">
+			<generator class="assigned"/>
+		</id>
+        <property name="userLabel" column="userLabel" type="java.lang.String"/>
+        <property name="nativeEMSName" column="nativeEMSName" type="java.lang.String"/>
+        <property name="owner" column="owner" type="java.lang.String"/>
+        <property name="emsVersion" column="emsVersion" type="java.lang.String"/>
+        <property name="type" column="type" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

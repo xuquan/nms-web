@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.topologicalLink.TopologicalLink" table="OTN_DELIVERY_TOPOLOGICALLINK">
+        <id name="nameStr" column="nameStr" type="java.lang.String" length="1024">
+			<generator class="assigned"/>
+		</id>
+        <property name="userLabel" type="java.lang.String">
+            <column name="USERLABEL" />
+        </property>
+        <property name="nativeEMSName" type="java.lang.String">
+            <column name="NATIVEEMSNAME" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="OWNER" />
+        </property>
+        <property name="direction" type="java.lang.String">
+            <column name="DIRECTION" />
+        </property>
+        <property name="rate" type="short">
+            <column name="RATE" />
+        </property>
+        <property name="aEndTPStr" type="java.lang.String" access="field">
+            <column name="AENDTPSTR" />
+        </property>
+        <property name="zEndTPStr" type="java.lang.String" access="field">
+            <column name="ZENDTPSTR" />
+        </property>
+        <property name="subnetworkNameStr" type="java.lang.String">
+            <column name="subnetworkNameStr" />
+        </property>
+        <property name="routeAndTopologicalLinkId" type="int">
+            <column name="routeAndTopologicalLinkId" />
+        </property>
+    </class>
+</hibernate-mapping>

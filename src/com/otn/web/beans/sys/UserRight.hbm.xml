@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.web.beans.sys.UserRight" table="SYS_USER_RIGHT">
+        <id name="userRightId" type="long">
+            <column name="USER_RIGHT_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="userId" type="long">
+            <column name="USER_ID" not-null="true"/>
+        </property>
+        <property name="rightId" type="long">
+            <column name="RIGHT_ID" not-null="true"/>
+        </property>
+        <property name="rightType" type="int">
+            <column name="RIGHT_TYPE" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

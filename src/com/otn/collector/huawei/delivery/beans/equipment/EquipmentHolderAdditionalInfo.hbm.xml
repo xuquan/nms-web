@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.equipment.EquipmentHolderAdditionalInfo" table="OTN_DELIVERY_EQUIPMENTHOLDERADDITIONALINFO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="alarmSeverity" type="java.lang.String">
+            <column name="ALARMSEVERITY" />
+        </property>
+        <property name="phyInfo" type="java.lang.String">
+            <column name="PHYINFO" />
+        </property>
+        <property name="gateWay" type="java.lang.String">
+            <column name="GATEWAY" />
+        </property>
+        <property name="version" type="java.lang.String">
+            <column name="VERSION" />
+        </property>
+        <property name="productName" type="java.lang.String">
+            <column name="PRODUCTNAME" />
+        </property>
+        <property name="shelfType" type="java.lang.String">
+            <column name="SHELFTYPE" />
+        </property>
+        <property name="preConfig" type="java.lang.String">
+            <column name="PRECONFIG" />
+        </property>
+        <property name="equipmentHolderNameStr" type="java.lang.String">
+            <column name="equipmentHolderNameStr" />
+        </property>
+    </class>
+</hibernate-mapping>

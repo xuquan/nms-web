@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.subnetworkConnection.SubnetworkConnectionAdditionalInfo" table="OTN_DELIVERY_SUBNETWORKCONNECTIONADDITIONALINFO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="ovpnCustomer" type="java.lang.String">
+            <column name="OVPNCUSTOMER" />
+        </property>
+        <property name="priority" type="java.lang.String">
+            <column name="PRIORITY" />
+        </property>
+        <property name="opciState" type="java.lang.String">
+            <column name="OPCISTATE" />
+        </property>
+        <property name="sncNameStr" type="java.lang.String">
+            <column name="sncNameStr" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.otn.collector.huawei.delivery.beans.trailNtwProtection.TrailNtwProtection" table="OTN_DELIVERY_TRAILNTWPROTECTION">
+        <id name="nameStr" type="java.lang.String">
+            <column name="nameStr" />
+            <generator class="assigned" />
+        </id>
+        <property name="userLabel" type="java.lang.String">
+            <column name="USERLABEL" />
+        </property>
+        <property name="nativeEMSName" type="java.lang.String">
+            <column name="NATIVEEMSNAME" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="OWNER" />
+        </property>
+        <property name="protectionGroupType" type="java.lang.String">
+            <column name="PROTECTIONGROUPTYPE" />
+        </property>
+        <property name="protectionSchemeState" type="java.lang.String">
+            <column name="PROTECTIONSCHEMESTATE" />
+        </property>
+        <property name="reversionMode" type="java.lang.String">
+            <column name="REVERSIONMODE" />
+        </property>
+        <property name="rate" type="short">
+            <column name="RATE" />
+        </property>
+        <property name="trailNtwProtectionType" type="java.lang.String">
+            <column name="TRAILNTWPROTECTIONTYPE" />
+        </property>
+        <property name="protectionGroupANameStr" type="java.lang.String">
+            <column name="PROTECTIONGROUPANAMESTR" />
+        </property>
+        <property name="protectionGroupZNameStr" type="java.lang.String">
+            <column name="PROTECTIONGROUPZNAMESTR" />
+        </property>
+        <property name="pgATPListStr" type="java.lang.String" access="field">
+            <column name="PGATPLISTSTR" />
+        </property>
+        <property name="pgZTPListStr" type="java.lang.String" access="field">
+            <column name="PGZTPLISTSTR" />
+        </property>
+        <property name="workerTrailListStr" type="java.lang.String" access="field">
+            <column name="WORKERTRAILLISTSTR" />
+        </property>
+        <property name="protectionTrailStr" type="java.lang.String" access="field">
+            <column name="PROTECTIONTRAILSTR" />
+        </property>
+        <property name="tnpParametersStr" type="java.lang.String">
+            <column name="TNPPARAMETERSSTR" />
+        </property>
+        <property name="apsFunction" type="java.lang.String">
+            <column name="APSFUNCTION" />
+        </property>
+        <property name="networkAccessDomain" type="java.lang.String">
+            <column name="NETWORKACCESSDOMAIN" />
+        </property>
+        <property name="additionalInfoStr" type="java.lang.String">
+            <column name="ADDITIONALINFOSTR" length="1024"/>
+        </property>
+    </class>
+</hibernate-mapping>
